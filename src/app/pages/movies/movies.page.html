@@ -17,9 +17,9 @@
   </ion-item>
 
   <ion-list>
-    <ion-item button *ngFor="let movie of (response | async)">
+    <ion-item button *ngFor="let movie of (response | async)" [routerLink]="['/', 'movie', movie.imdbID]">
       <ion-avatar slot="start">
-        <img src="{{ movie.Poster }}" alt="{{ movie.Title }}">
+        <img src="{{ movie.Poster }}" alt="{{ movie.Title }}" *ngIf="movie.Poster != 'N/A'">
       </ion-avatar>
       <ion-label text-wrap>
         <h2>{{ movie.Title }}</h2>
