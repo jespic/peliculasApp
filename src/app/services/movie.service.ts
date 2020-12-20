@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class MovieService {
   private url: string = '';
-  private apiKey: string = 'efb98851';
+  private apiKey: string = '********';
 
   constructor(private http: HttpClient) { }
 

@@ -1,0 +1,1 @@
+Desarrollo de una app sencilla mediante Ionic + Angular en la cual se obtienen un listado de películas así como información sobre cada una de ellas según la búsqueda que realice el usuario. Estos datos son recuperados de la API OMDb API (https://www.omdbapi.com/).

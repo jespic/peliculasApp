@@ -1,3 +1,4 @@
+import { IMovie } from './../../model/IMovie.interface';
 import { MovieService } from './../../services/movie.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -7,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./movie-details.page.scss'],
 })
 export class MovieDetailsPage implements OnInit {
-  details: object = null;
+  details: IMovie;
 
   constructor(private movieService: MovieService, private activatedRoute: ActivatedRoute) { }
 
